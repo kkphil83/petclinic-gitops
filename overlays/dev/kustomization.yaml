@@ -3,5 +3,5 @@ kind: Kustomization
 images:
 - name: quay-quay-quay.apps.hub-cloud-mes.samsungsds.com/quayuser/petclinic
   newTag: latest
-resouce:
+resouces:
 - ../../base

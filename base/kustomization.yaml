@@ -1,8 +1,5 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-images:
-- name: quay-quay-quay.apps.hub-cloud-mes.samsungsds.com/quayuser/petclinic
-  newTag: latest
 resources:
 - deployment.yaml
 - svc.yaml
