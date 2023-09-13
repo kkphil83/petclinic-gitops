@@ -1,24 +1,11 @@
-apiVersion: v1
-kind: Service
+apiVersion: route.openshift.io/v1
+kind: Route
 metadata:
-  labels:
-    app: petclinic
   name: petclinic
 spec:
-  ports:
-  - name: 8080-tcp
-    port: 8080
-    protocol: TCP
+  path: /
+  to:
+    kind: Service
+    name: petclinic
+  port:
     targetPort: 8080
-  - name: 8443-tcp
-    port: 8443
-    protocol: TCP
-    targetPort: 8443
-  - name: 8778-tcp
-    port: 8778
-    protocol: TCP
-    targetPort: 8778
-  selector:
-    app: petclinic
-  sessionAffinity: None
-  type: ClusterIP
