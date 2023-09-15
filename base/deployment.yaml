@@ -15,7 +15,7 @@ spec:
         app: petclinic
     spec:
       containers:
-      - image: quay-quay-quay.apps.hub-cloud-mes.samsungsds.com/quayuser/petclinic:latest
+      - image: quay-quay-quay.apps.hub-cloud-mes.samsungsds.com/quayuser/petclinic: 1.0-20230915-084220
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3
