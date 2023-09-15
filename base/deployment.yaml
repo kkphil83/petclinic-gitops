@@ -15,7 +15,7 @@ spec:
         app: petclinic
     spec:
       containers:
-      - image: image-registry.openshift-image-registry.svc:5000/app-1/petclinic:latest
+      - image: quay-quay-quay.apps.hub-cloud-mes.samsungsds.com/quayuser/petclinic:latest
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3
